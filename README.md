@@ -15,9 +15,10 @@ npm install apc-ups-snmp
 ```javascript
 var apcUps = require('apc-ups-snmp');
 
-var ups = new apcUps({
-  host: '' // IP Address/Hostname
-});
+var ups = new apcUps(
+  host='',      // IP Address/Hostname
+  community=''  // Community Name
+);
 ```
 
 A full range of examples can be found within the [examples directory](https://github.com/phillipsnick/apc-ups-snmp/tree/master/examples)

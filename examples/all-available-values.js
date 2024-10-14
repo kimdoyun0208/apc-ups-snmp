@@ -1,7 +1,6 @@
-var apcUps = require('../lib/app')
-  , config = require('./config');
+var apcUps = require('apc-ups-snmp');
 
-var ups = new apcUps(config);
+var ups = new apcUps(host="0.0.0.0", community="private");
 
 /**
  * Get the UPS model name (e.g. 'APC Smart-UPS 600')
